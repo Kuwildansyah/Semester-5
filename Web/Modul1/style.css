@@ -1,0 +1,60 @@
+*{
+    font-family: be vietnam medium;
+}
+.container{
+    display: flexbox;
+    position: relative;
+    background-color: aquamarine;
+    padding: 10px;
+    margin: auto;
+}
+.tabel{
+    background-color: rgb(166, 226, 166);
+    width : 100%;
+    text-align: center;
+    border: 2px solid black;
+    padding: 1%;
+    margin-top :100px;
+}
+.tabel table{
+    border: 2px solid white;
+}
+.date{
+    margin: 3px;
+margin-bottom: 10px;
+}
+.input{
+    margin-left: 10px;
+}
+.name{
+    margin: 10px;
+}
+.nim{
+    margin: 10px;
+}
+.nomer{
+    margin-left: 15px;
+}
+.alamat1{
+    display: flex;
+    position:absolute;
+}
+.button{
+    margin-left: 72px;
+}
+.tombol{
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    border: 0px;
+    background-color: rgb(132, 190, 181);
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+}
+.tombol:hover{
+    background-color: aliceblue;
+    color: blue;
+}
+
