@@ -10,7 +10,7 @@
 }
 .tabel{
     background-color: rgb(166, 226, 166);
-    width : 100%;
+    width : 1000px;
     text-align: center;
     border: 2px solid black;
     padding: 1%;
@@ -21,7 +21,7 @@
 }
 .date{
     margin: 3px;
-margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 .input{
     margin-left: 10px;

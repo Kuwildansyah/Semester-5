@@ -115,8 +115,8 @@ class ProfilePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const CircleAvatar(
-              radius: 50,
-              backgroundImage: NetworkImage('https://via.placeholder.com/150'),
+              radius: 60,
+              backgroundImage: NetworkImage('fu_xuan.png'),
             ),
             const Text(
               'User Name',
@@ -130,7 +130,7 @@ class ProfilePage extends StatelessWidget {
               'User Email',
               style: TextStyle(
                 fontSize: 20,
-                color: Colors.white,
+                color: Colors.blue,
                 letterSpacing: 2.5,
                 fontWeight: FontWeight.bold,
               ),
