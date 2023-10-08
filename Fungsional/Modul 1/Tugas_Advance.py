@@ -21,7 +21,7 @@ def lend_book(requested_book, user):
             borrowed_books[user].append(requested_book)
         else:
             borrowed_books[user] = [requested_book]
-    else:
+    else: 
         print('Maaf, buku', requested_book, 'tidak tersedia')
 
 def add_book(returned_book, user):
