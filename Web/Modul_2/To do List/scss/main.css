@@ -90,6 +90,12 @@ form {
   transition: color 1000ms;
 }
 
+::before .btn.delete:hover {
+  color: var(--clr-light);
+  background-color: var(--clr-dark);
+  transition: color 1000ms;
+}
+
 .new {
   background: transparent;
   border: 0;
