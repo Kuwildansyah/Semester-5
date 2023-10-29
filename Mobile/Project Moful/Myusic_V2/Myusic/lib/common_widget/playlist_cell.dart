@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:music_player/model/spotify_popular_playlist.dart' hide Image;
 
 import '../common/color_extension.dart';
 
 class PlaylistCell extends StatelessWidget {
-  final Map mObj;
+  final PlaylistItem mObj;
   const PlaylistCell({super.key, required this.mObj});
 
   @override
@@ -16,8 +17,8 @@ class PlaylistCell extends StatelessWidget {
         children: [
           ClipRRect(
             borderRadius: BorderRadius.circular(9),
-            child: Image.asset(
-              mObj["image"],
+            child: Image.network(
+              mObj.images[0].url,
               width: double.maxFinite,
               height: 110,
               fit: BoxFit.cover,
@@ -27,7 +28,7 @@ class PlaylistCell extends StatelessWidget {
             height: 15,
           ),
           Text(
-            mObj["name"],
+            mObj.name,
             maxLines: 1,
             style: TextStyle(
                 color: TColor.primaryText60,
@@ -35,9 +36,10 @@ class PlaylistCell extends StatelessWidget {
                 fontWeight: FontWeight.w700),
           ),
           Text(
-            mObj["artists"],
+            mObj.description,
             maxLines: 1,
             style: TextStyle(
+                overflow: TextOverflow.ellipsis,
                 color: TColor.secondaryText,
                 fontSize: 10,
                 fontWeight: FontWeight.w700),
