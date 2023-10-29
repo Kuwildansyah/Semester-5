@@ -104,15 +104,17 @@ class _HomeViewState extends State<HomeView> {
             ),
             SizedBox(
               height: 160,
-              child: ListView.builder(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 10, vertical: 0),
-                  scrollDirection: Axis.horizontal,
-                  itemCount: homeVM.playListArr.length,
-                  itemBuilder: (context, index) {
-                    var mObj = homeVM.playListArr[index];
-                    return PlaylistCell(mObj: mObj);
-                  }),
+              child: GetBuilder<HomeViewModel>(
+                builder: (vm) => ListView.builder(
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 10, vertical: 0),
+                    scrollDirection: Axis.horizontal,
+                    itemCount: vm.playListArr.length,
+                    itemBuilder: (context, index) {
+                      var mObj = vm.playListArr[index];
+                      return PlaylistCell(mObj: mObj);
+                    }),
+              ),
             ),
             Divider(
               color: Colors.white.withOpacity(0.07),
