@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+// import 'package:flutter_webview_pro/webview_flutter.dart';
 import 'package:get/get.dart';
 import 'package:music_player/common_widget/icon_text_row.dart';
+import 'package:music_player/view/settings/webview.dart';
 import 'package:music_player/view_model/splash_view_model.dart';
+import 'package:webview_flutter/webview_flutter.dart';
 
 import '../../common/color_extension.dart';
 
@@ -38,38 +41,53 @@ class _SettingsViewState extends State<SettingsView> {
               fontWeight: FontWeight.w600),
         ),
       ),
-      body: ListView(
+      body: Column(
+        // Wrap your ListView with a Column
         children: [
-          IconTextRow(
-            title: "Display",
-            icon: "assets/img/s_display.png",
-            onTap: () {},
-          ),
-          IconTextRow(
-            title: "Audio",
-            icon: "assets/img/s_audio.png",
-            onTap: () {},
-          ),
-          IconTextRow(
-            title: "Headset",
-            icon: "assets/img/s_headset.png",
-            onTap: () {},
-          ),
-          IconTextRow(
-            title: "Lock Screen",
-            icon: "assets/img/s_lock_screen.png",
-            onTap: () {},
-          ),
-          IconTextRow(
-            title: "Advanced",
-            icon: "assets/img/s_menu.png",
-            onTap: () {},
-          ),
-
-          IconTextRow(
-            title: "Other",
-            icon: "assets/img/s_other.png",
-            onTap: () {},
+          Expanded(
+            // Make the ListView expand to take available space
+            child: ListView(
+              children: [
+                IconTextRow(
+                  title: "Display",
+                  icon: "assets/img/s_display.png",
+                  onTap: () {},
+                ),
+                IconTextRow(
+                  title: "Audio",
+                  icon: "assets/img/s_audio.png",
+                  onTap: () {},
+                ),
+                IconTextRow(
+                  title: "Headset",
+                  icon: "assets/img/s_headset.png",
+                  onTap: () {},
+                ),
+                IconTextRow(
+                  title: "Lock Screen",
+                  icon: "assets/img/s_lock_screen.png",
+                  onTap: () {},
+                ),
+                IconTextRow(
+                  title: "Advanced",
+                  icon: "assets/img/s_menu.png",
+                  onTap: () {},
+                ),
+                IconTextRow(
+                  title: "Other",
+                  icon: "assets/img/s_other.png",
+                  onTap: () {},
+                ),
+                IconTextRow(
+                  title: "Spotify (web)",
+                  icon: "assets/img/m_eq.png", // Replace with your desired icon
+                  onTap: () {
+                    // Use GetX to navigate to the WebView page
+                    Get.to(() => WebviewPage());
+                  },
+                ),
+              ],
+            ),
           ),
         ],
       ),
