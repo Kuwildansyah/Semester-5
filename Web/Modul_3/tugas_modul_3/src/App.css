@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+*{
+  font-family: "be vietnam";
+
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .nav-links li {
+    display: inline-block;
+    margin: 0;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: black;
+    /* padding: 10px 20px; 
+    border-radius: 10px;
+    font-size: 14px;
+    margin: 0;  */
   }
-}
+  #sub p{
+    font-size: 12;
+  }
+  #title{
+    font-size: 16!important;
+  }
+  .title{
+    font-size: 12!important;
+  }
+
+  .btn {
+    
+    border-radius: 10px;
+    padding: 10px 20px; 
+    font-size: 14px;
+  }
+  
+  .nav-center {
+    text-align: center; 
+    margin: 0; 
+  }
+  
+  .content {
+    position: absolute;
+    margin-top: 17%!important;
+    /* left: 10%;
+    bottom: 50%;
+    width: 50%;
+    max-width: 900px;
+    color: #fff; */
+  }
+  
+  
+  .sub {
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+  }
+  .sub:hover{
+    color: rgb(228, 82, 82);
+  }
+  .logo_foot{
+    object-fit:cover;
+    filter: blur(10px);
+  -webkit-filter: blur(8px);
+    width: 1920px;
+    height: 768px;
+    /* background-color: black!important; */
+    /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  
+  z-index: -10;
+  opacity: .5;
+  }
+  .black{
+    background-color: black;
+    opacity: 0.9;
+  }
+  .logo_foot2{
+    object-fit:contain;
+    width: auto;
+    height: auto;
+  }
+  .learn{
+    height: 45px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+  }
+  

@@ -2,9 +2,11 @@ import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router,Routes, Route, Link,Switch, BrowserRouter } from 'react-router-dom';
 import Navbar from "./components/navbar";
+import Footer from "./components/footer";
 import Contact from "./pages/contact";
 import About from "./pages/about";
 import Beranda from "./pages/beranda";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
@@ -12,7 +14,8 @@ import Beranda from "./pages/beranda";
 function App() {
   return (
     <div>
-  <Navbar></Navbar>
+  <Navbar /> 
+
 <BrowserRouter>
     <Routes>
       <Route index element={<Beranda />} ></Route>
@@ -21,10 +24,9 @@ function App() {
       <Route  path="/about" element={<About />} ></Route>
     </Routes>
 </BrowserRouter>
-
+<Footer />
 </div>
-    // // <Hero ></Hero>
-    // // <Footer></Footer>
+
    
   );
 }
