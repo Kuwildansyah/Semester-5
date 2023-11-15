@@ -8,14 +8,10 @@ import About from "./pages/about";
 import Beranda from "./pages/beranda";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
-
-
 function App() {
   return (
     <div>
   <Navbar /> 
-
 <BrowserRouter>
     <Routes>
       <Route index element={<Beranda />} ></Route>
@@ -25,6 +21,7 @@ function App() {
     </Routes>
 </BrowserRouter>
 <Footer />
+
 </div>
 
    

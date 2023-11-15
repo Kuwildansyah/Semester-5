@@ -1,6 +1,6 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import hero from "../pages/assets/hero.jpg";
+import hero from "../assets/hero.jpg";
 import '../App.css';
 
 function beranda() {

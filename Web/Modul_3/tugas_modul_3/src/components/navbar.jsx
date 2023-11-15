@@ -24,7 +24,7 @@ function navbar() {
   <ul class="nav-links nav-center">
     <li class="nav-item fw-bold text-dark mx-4">
       <a href="#" class="btn btn-light text-dark fw-bold fs-6 ">
-      <Link to="/">Beranda</Link>
+      <Link to="/home">Beranda</Link>
       </a>
       </li>
     <li class="nav-item fw-bold text-dark mx-4">
@@ -47,11 +47,7 @@ function navbar() {
 </div>
 </div>
 </div>
-  <Routes>
-  <Route  path="/home" element={<Beranda />} ></Route>
-      <Route  path="/contact" element={<Contact />} ></Route>
-      <Route  path="/about" element={<About />} ></Route>
-  </Routes>
+  
 </BrowserRouter>
 
   )
