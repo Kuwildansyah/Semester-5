@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "500586239558",
+    "project_id": "anything-a1680",
+    "storage_bucket": "anything-a1680.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:500586239558:android:af4153a3a53824edba9c47",
+        "android_client_info": {
+          "package_name": "com.codeforany.music_player"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "500586239558-nk7odtgn99c2krsoh1l7jk4935804spr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVKyaFcIS5lxs8D6j31AHX6Rcm_7Km5ew"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "500586239558-nk7odtgn99c2krsoh1l7jk4935804spr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyBsGHdgkz9nlu4oi8QperuJ5euK4dcwC4M</string>
+	<key>GCM_SENDER_ID</key>
+	<string>500586239558</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.codeforany.musicPlayer</string>
+	<key>PROJECT_ID</key>
+	<string>anything-a1680</string>
+	<key>STORAGE_BUCKET</key>
+	<string>anything-a1680.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:500586239558:ios:5005d4b1655c8062ba9c47</string>
+</dict>
+</plist>

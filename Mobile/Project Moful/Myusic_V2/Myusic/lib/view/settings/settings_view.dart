@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:music_player/common_widget/icon_text_row.dart';
 import 'package:music_player/view/settings/webview.dart';
+import 'package:music_player/view/songs/registration_view.dart';
 import 'package:music_player/view_model/splash_view_model.dart';
-import 'package:webview_flutter/webview_flutter.dart';
 
 import '../../common/color_extension.dart';
 
@@ -49,6 +49,13 @@ class _SettingsViewState extends State<SettingsView> {
             child: ListView(
               children: [
                 IconTextRow(
+                  title: "User",
+                  icon: "assets/img/app_logo.png",
+                  onTap: () {
+                    Get.to(() => RegistrationView());
+                  },
+                ),
+                IconTextRow(
                   title: "Display",
                   icon: "assets/img/s_display.png",
                   onTap: () {},
@@ -83,7 +90,7 @@ class _SettingsViewState extends State<SettingsView> {
                   icon: "assets/img/m_eq.png", // Replace with your desired icon
                   onTap: () {
                     // Use GetX to navigate to the WebView page
-                    Get.to(() => WebviewPage());
+                    Get.to(() => const WebviewPage());
                   },
                 ),
               ],
