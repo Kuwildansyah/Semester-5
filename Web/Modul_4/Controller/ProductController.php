@@ -17,7 +17,7 @@ class ProductController extends Controller
         // SET ATRIBUT controllerName PADA PARENT CLASS CONTROLLER
         $this->controllerName = "Get All Product";
         // SET ATRIBUT controllerMethod PADA PARENT CLASS CONTROLLER
-        $this->controllerMethod = "GET";
+        $this->controllerMethod = "POST";
     
     }
     // DISIMULASIKAN INI METHOD UNTUK GET DATA PRODUCT 
