@@ -26,7 +26,7 @@ class _SignInPageState extends State<SignInPage> {
           },
           icon: const Image(
             width: 24,
-            color: Colors.white,
+            color: Color.fromARGB(255, 28, 19, 36),
             image: Svg('assets/images/back_arrow.svg'),
           ),
         ),

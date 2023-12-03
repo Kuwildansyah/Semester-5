@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:music_player/common_widget/icon_text_row.dart';
 import 'package:music_player/view/songs/registration_view.dart';
 import 'package:music_player/view_model/splash_view_model.dart';
+import 'package:music_player/view/profile/pages/profile_page.dart';
 
 import '../../common/color_extension.dart';
 
@@ -85,11 +86,11 @@ class _SettingsViewState extends State<SettingsView> {
                   onTap: () {},
                 ),
                 IconTextRow(
-                  title: "Spotify (web)",
-                  icon: "assets/img/m_eq.png", // Replace with your desired icon
+                  title: "Profile",
+                  icon: "assets/img/userwhite.png", // Replace with your desired icon
                   onTap: () {
                     // Use GetX to navigate to the WebView page
-                    // Get.to(() => const WebviewPage());
+                    Get.to(() =>  ProfilePage());
                   },
                 ),
               ],

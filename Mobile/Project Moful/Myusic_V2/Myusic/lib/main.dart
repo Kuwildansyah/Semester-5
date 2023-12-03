@@ -46,7 +46,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'Music Player',
+      title: 'Myusic',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         fontFamily: "Circular Std",

@@ -20,10 +20,10 @@ class WelcomePage extends StatelessWidget {
                   children: [
                     Center(
                       child: SizedBox(
-                        width: MediaQuery.of(context).size.width * 0.8,
+                        width: MediaQuery.of(context).size.width * 0.8, 
                         child: const Image(
                           image:
-                              AssetImage('assets/images/team_illustration.png'),
+                              AssetImage('assets/img/radio.png'),
                         ),
                       ),
                     ),
@@ -31,7 +31,7 @@ class WelcomePage extends StatelessWidget {
                       height: 20,
                     ),
                     const Text(
-                      "Enterprise team\ncollaboration.",
+                      "Explore  Music\nFor Free.",
                       style: kHeadline,
                       textAlign: TextAlign.center,
                     ),
@@ -41,7 +41,7 @@ class WelcomePage extends StatelessWidget {
                     SizedBox(
                       width: MediaQuery.of(context).size.width * 0.8,
                       child: const Text(
-                        "Bring together your files, your tools, project and people.Including a new mobile and desktop application.",
+                        "Bring together your favourite music, in everywhere, anytime, and free.",
                         style: kBodyText,
                         textAlign: TextAlign.center,
                       ),
