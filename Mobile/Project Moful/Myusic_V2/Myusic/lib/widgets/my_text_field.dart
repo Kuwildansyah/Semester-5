@@ -4,10 +4,10 @@ import '../constant.dart';
 
 class MyTextField extends StatelessWidget {
   const MyTextField({
-    Key? key,
+    super.key,
     required this.hintText,
     required this.inputType,
-  }) : super(key: key);
+  });
   final String hintText;
   final TextInputType inputType;
 
@@ -21,18 +21,18 @@ class MyTextField extends StatelessWidget {
         keyboardType: inputType,
         textInputAction: TextInputAction.next,
         decoration: InputDecoration(
-          contentPadding: EdgeInsets.all(20),
+          contentPadding: const EdgeInsets.all(20),
           hintText: hintText,
           hintStyle: kBodyText,
           enabledBorder: OutlineInputBorder(
-            borderSide: BorderSide(
+            borderSide: const BorderSide(
               color: Colors.grey,
               width: 1,
             ),
             borderRadius: BorderRadius.circular(18),
           ),
           focusedBorder: OutlineInputBorder(
-            borderSide: BorderSide(
+            borderSide: const BorderSide(
               color: Colors.white,
               width: 1,
             ),

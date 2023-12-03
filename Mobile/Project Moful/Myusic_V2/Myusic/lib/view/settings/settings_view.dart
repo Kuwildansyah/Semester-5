@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 // import 'package:flutter_webview_pro/webview_flutter.dart';
 import 'package:get/get.dart';
 import 'package:music_player/common_widget/icon_text_row.dart';
-import 'package:music_player/view/settings/webview.dart';
 import 'package:music_player/view/songs/registration_view.dart';
 import 'package:music_player/view_model/splash_view_model.dart';
 

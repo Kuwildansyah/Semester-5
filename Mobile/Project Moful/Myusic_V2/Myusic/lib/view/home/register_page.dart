@@ -4,6 +4,8 @@ import '../../widgets/widget.dart';
 import '../../constant.dart';
 
 class RegisterPage extends StatefulWidget {
+  const RegisterPage({super.key});
+
   @override
   _RegisterPageState createState() => _RegisterPageState();
 }
@@ -20,7 +22,7 @@ class _RegisterPageState extends State<RegisterPage> {
           onPressed: () {
             Navigator.pop(context);
           },
-          icon: Image(
+          icon: const Image(
             width: 24,
             color: Colors.white,
             image: Svg('assets/images/back_arrow.svg'),
@@ -42,31 +44,31 @@ class _RegisterPageState extends State<RegisterPage> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(
+                          const Text(
                             "Register",
                             style: kHeadline,
                           ),
-                          Text(
+                          const Text(
                             "Create new account to get started.",
                             style: kBodyText2,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 50,
                           ),
-                          MyTextField(
+                          const MyTextField(
                             hintText: 'Name',
                             inputType: TextInputType.name,
                           ),
-                          MyTextField(
+                          const MyTextField(
                             hintText: 'Email',
                             inputType: TextInputType.emailAddress,
                           ),
-                          MyTextField(
+                          const MyTextField(
                             hintText: 'Phone',
                             inputType: TextInputType.phone,
                           ),
                           MyPasswordField(
-                            key: Key('myPasswordField'), 
+                            key: const Key('myPasswordField'), 
                             isPasswordVisible: passwordVisibility,
                             onTap: () {
                               setState(() {
@@ -80,7 +82,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text(
+                        const Text(
                           "Already have an account? ",
                           style: kBodyText,
                         ),
@@ -92,7 +94,7 @@ class _RegisterPageState extends State<RegisterPage> {
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
                     MyTextButton(

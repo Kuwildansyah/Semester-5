@@ -6,6 +6,8 @@ import 'package:flutter_svg_provider/flutter_svg_provider.dart';
 import '../../widgets/widget.dart';
 
 class SignInPage extends StatefulWidget {
+  const SignInPage({super.key});
+
   @override
   _SignInPageState createState() => _SignInPageState();
 }
@@ -22,7 +24,7 @@ class _SignInPageState extends State<SignInPage> {
           onPressed: () {
             Navigator.pop(context);
           },
-          icon: Image(
+          icon: const Image(
             width: 24,
             color: Colors.white,
             image: Svg('assets/images/back_arrow.svg'),
@@ -46,26 +48,26 @@ class _SignInPageState extends State<SignInPage> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(
+                          const Text(
                             "Welcome back.",
                             style: kHeadline,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 10,
                           ),
-                          Text(
+                          const Text(
                             "You've been missed!",
                             style: kBodyText2,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 60,
                           ),
-                          MyTextField(
+                          const MyTextField(
                             hintText: 'Phone, email or username',
                             inputType: TextInputType.text,
                           ),
                        MyPasswordField(
-                            key: Key('myPasswordField'), // Add this line
+                            key: const Key('myPasswordField'), // Add this line
                             isPasswordVisible: isPasswordVisible,
                             onTap: () {
                               setState(() {
@@ -79,7 +81,7 @@ class _SignInPageState extends State<SignInPage> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text(
+                        const Text(
                           "Dont't have an account? ",
                           style: kBodyText,
                         ),
@@ -88,7 +90,7 @@ class _SignInPageState extends State<SignInPage> {
                             Navigator.push(
                               context,
                               CupertinoPageRoute(
-                                builder: (context) => RegisterPage(),
+                                builder: (context) => const RegisterPage(),
                               ),
                             );
                           },
@@ -101,7 +103,7 @@ class _SignInPageState extends State<SignInPage> {
                         )
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
                     MyTextButton(

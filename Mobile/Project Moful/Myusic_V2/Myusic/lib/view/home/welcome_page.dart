@@ -5,6 +5,8 @@ import 'screen.dart';
 import '../../widgets/widget.dart';
 
 class WelcomePage extends StatelessWidget {
+  const WelcomePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,28 +19,28 @@ class WelcomePage extends StatelessWidget {
                 child: Column(
                   children: [
                     Center(
-                      child: Container(
+                      child: SizedBox(
                         width: MediaQuery.of(context).size.width * 0.8,
-                        child: Image(
+                        child: const Image(
                           image:
                               AssetImage('assets/images/team_illustration.png'),
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
-                    Text(
+                    const Text(
                       "Enterprise team\ncollaboration.",
                       style: kHeadline,
                       textAlign: TextAlign.center,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
-                    Container(
+                    SizedBox(
                       width: MediaQuery.of(context).size.width * 0.8,
-                      child: Text(
+                      child: const Text(
                         "Bring together your files, your tools, project and people.Including a new mobile and desktop application.",
                         style: kBodyText,
                         textAlign: TextAlign.center,
@@ -63,7 +65,7 @@ class WelcomePage extends StatelessWidget {
                           Navigator.push(
                               context,
                               CupertinoPageRoute(
-                                  builder: (context) => RegisterPage()));
+                                  builder: (context) => const RegisterPage()));
                         },
                         textColor: Colors.black87,
                       ),
@@ -76,7 +78,7 @@ class WelcomePage extends StatelessWidget {
                           Navigator.push(
                               context,
                               CupertinoPageRoute(
-                                builder: (context) => SignInPage(),
+                                builder: (context) => const SignInPage(),
                               ));
                         },
                         textColor: Colors.white,
