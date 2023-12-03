@@ -90,7 +90,7 @@ class _SettingsViewState extends State<SettingsView> {
                   icon: "assets/img/m_eq.png", // Replace with your desired icon
                   onTap: () {
                     // Use GetX to navigate to the WebView page
-                    Get.to(() => const WebviewPage());
+                    // Get.to(() => const WebviewPage());
                   },
                 ),
               ],

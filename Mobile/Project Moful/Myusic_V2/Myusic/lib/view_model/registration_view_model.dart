@@ -8,11 +8,6 @@ class RegistrationViewModel extends GetxController {
 
   register() async {
     try {
-      final credential =
-          await FirebaseAuth.instance.createUserWithEmailAndPassword(
-        email: txtEmail.value.text,
-        password: txtPwd.value.text,
-      );
     } on FirebaseAuthException catch (e) {
       if (e.code == 'weak-password') {
         print('The password provided is too weak.');
