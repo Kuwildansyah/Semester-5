@@ -42,7 +42,7 @@ class _HomeViewState extends State<HomeView> {
               child: Container(
                 height: 38,
                 decoration: BoxDecoration(
-                  color: Color.fromARGB(255, 114, 119, 146),
+                  color: const Color.fromARGB(255, 114, 119, 146),
                   borderRadius: BorderRadius.circular(19),
                 ),
                 child: TextField(

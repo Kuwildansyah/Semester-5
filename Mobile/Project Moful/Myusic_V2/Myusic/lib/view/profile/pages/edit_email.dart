@@ -5,7 +5,7 @@ import 'package:email_validator/email_validator.dart';
 
 // This class handles the Page to edit the Email Section of the User Profile.
 class EditEmailFormPage extends StatefulWidget {
-  const EditEmailFormPage({Key? key}) : super(key: key);
+  const EditEmailFormPage({super.key});
 
   @override
   EditEmailFormPageState createState() {
@@ -38,16 +38,16 @@ class EditEmailFormPageState extends State<EditEmailFormPage> {
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
-                SizedBox(
+                const SizedBox(
                     width: 320,
-                    child: const Text(
+                    child: Text(
                       "What's your email?",
                       style:
                           TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
                       textAlign: TextAlign.left,
                     )),
                 Padding(
-                    padding: EdgeInsets.only(top: 40),
+                    padding: const EdgeInsets.only(top: 40),
                     child: SizedBox(
                         height: 100,
                         width: 320,
@@ -64,7 +64,7 @@ class EditEmailFormPageState extends State<EditEmailFormPage> {
                           controller: emailController,
                         ))),
                 Padding(
-                    padding: EdgeInsets.only(top: 150),
+                    padding: const EdgeInsets.only(top: 150),
                     child: Align(
                         alignment: Alignment.bottomCenter,
                         child: SizedBox(

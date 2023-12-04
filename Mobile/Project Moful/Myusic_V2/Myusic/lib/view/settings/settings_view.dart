@@ -90,7 +90,7 @@ class _SettingsViewState extends State<SettingsView> {
                   icon: "assets/img/userwhite.png", // Replace with your desired icon
                   onTap: () {
                     // Use GetX to navigate to the WebView page
-                    Get.to(() =>  ProfilePage());
+                    Get.to(() =>  const ProfilePage());
                   },
                 ),
               ],
