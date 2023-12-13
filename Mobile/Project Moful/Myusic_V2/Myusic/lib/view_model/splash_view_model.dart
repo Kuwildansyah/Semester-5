@@ -14,7 +14,7 @@ class SplashViewMode extends GetxController {
 
     void loadView() async {
        await Future.delayed(const Duration(seconds: 2) );
-       Get.to( () =>  ProfilePage() );
+       Get.to( () =>  WelcomePage() );
     }
 
     void openDrawer(){
