@@ -49,15 +49,15 @@ class SongsRow extends StatelessWidget {
               ],
             )),
             Column(
-              
               children: [
                 Image.asset(
                   "assets/img/fav.png",
                   width: 12,
                   height: 12,
                 ),
-
-                const SizedBox(height: 4,),
+                const SizedBox(
+                  height: 4,
+                ),
                 IgnorePointer(
                   ignoring: true,
                   child: RatingBar.builder(

@@ -7,8 +7,7 @@ class RegistrationViewModel extends GetxController {
   final txtPwd = TextEditingController().obs;
 
   register() async {
-    try {
-    } on FirebaseAuthException catch (e) {
+    try {} on FirebaseAuthException catch (e) {
       if (e.code == 'weak-password') {
         print('The password provided is too weak.');
       } else if (e.code == 'email-already-in-use') {

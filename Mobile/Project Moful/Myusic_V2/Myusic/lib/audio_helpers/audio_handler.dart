@@ -194,12 +194,12 @@ class MyAudioHandler extends BaseAudioHandler implements AudioPlayerHandler {
 
   @override
   Future<void> skipToNext() async {
-     player.seekToNext();
+    player.seekToNext();
   }
 
   @override
   Future<void> skipToPrevious() async {
-     player.seekToPrevious();
+    player.seekToPrevious();
   }
 
   @override
@@ -230,7 +230,7 @@ class MyAudioHandler extends BaseAudioHandler implements AudioPlayerHandler {
 
   @override
   Future customAction(String name, [Map<String, dynamic>? extras]) async {
-    if(name == 'dispose') {
+    if (name == 'dispose') {
       await player.dispose();
       super.stop();
     }
@@ -239,7 +239,8 @@ class MyAudioHandler extends BaseAudioHandler implements AudioPlayerHandler {
   @override
   Future<void> stop() async {
     await player.stop();
-    playbackState.add( playbackState.value.copyWith(processingState: AudioProcessingState.idle) );
+    playbackState.add(playbackState.value
+        .copyWith(processingState: AudioProcessingState.idle));
     return super.stop();
   }
 

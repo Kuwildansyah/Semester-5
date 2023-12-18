@@ -14,9 +14,7 @@ class PlayPlayListView extends StatefulWidget {
 }
 
 class _PlayPlayListViewState extends State<PlayPlayListView> {
-
   final allVM = Get.put(AllSongsViewModel());
-
 
   @override
   Widget build(BuildContext context) {
@@ -141,7 +139,6 @@ class _PlayPlayListViewState extends State<PlayPlayListView> {
             const SizedBox(
               height: 20,
             ),
-
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
@@ -242,8 +239,6 @@ class _PlayPlayListViewState extends State<PlayPlayListView> {
                 ),
               ],
             ),
-
-            
             const SizedBox(
               height: 10,
             ),
@@ -268,11 +263,10 @@ class _PlayPlayListViewState extends State<PlayPlayListView> {
               "Michael Jackson • Album - Dangerous",
               style: TextStyle(color: TColor.primaryText80, fontSize: 12),
             ),
-
             Obx(
               () => ListView.builder(
-                physics: const NeverScrollableScrollPhysics(),
-                shrinkWrap: true,
+                  physics: const NeverScrollableScrollPhysics(),
+                  shrinkWrap: true,
                   padding: const EdgeInsets.all(20),
                   itemCount: allVM.allList.length,
                   itemBuilder: (context, index) {
@@ -281,15 +275,10 @@ class _PlayPlayListViewState extends State<PlayPlayListView> {
                     return AllSongRow(
                       sObj: sObj,
                       onPressed: () {},
-                      onPressedPlay: () {
-                       
-                      },
+                      onPressedPlay: () {},
                     );
                   }),
             )
-            
-            
-            
           ],
         ),
       ),

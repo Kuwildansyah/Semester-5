@@ -116,7 +116,6 @@ class _MainTabViewState extends State<MainTabView>
                 icon: "assets/img/m_ring_cut.png",
                 onTap: () {},
               ),
-
               IconTextRow(
                 title: "Sleep Timer",
                 icon: "assets/img/m_sleep_timer.png",
@@ -132,7 +131,6 @@ class _MainTabViewState extends State<MainTabView>
                 icon: "assets/img/m_driver_mode.png",
                 onTap: () {},
               ),
-
               IconTextRow(
                 title: "Hidden Folders",
                 icon: "assets/img/m_hidden_folder.png",

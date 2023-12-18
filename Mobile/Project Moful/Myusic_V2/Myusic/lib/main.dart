@@ -26,8 +26,6 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-
-
   @override
   void initState() {
     // TODO: implement initState
@@ -37,7 +35,6 @@ class _MyAppState extends State<MyApp> {
 
   @override
   void dispose() {
-
     super.dispose();
     getIt<PageManager>().dispose();
   }
@@ -52,9 +49,9 @@ class _MyAppState extends State<MyApp> {
         fontFamily: "Circular Std",
         scaffoldBackgroundColor: TColor.bg,
         textTheme: Theme.of(context).textTheme.apply(
-          bodyColor: TColor.primaryText,
-          displayColor: TColor.primaryText,
-        ),
+              bodyColor: TColor.primaryText,
+              displayColor: TColor.primaryText,
+            ),
         colorScheme: ColorScheme.fromSeed(
           seedColor: TColor.primary,
         ),

@@ -66,7 +66,7 @@ class _SignInPageState extends State<SignInPage> {
                             hintText: 'Phone, email or username',
                             inputType: TextInputType.text,
                           ),
-                       MyPasswordField(
+                          MyPasswordField(
                             key: const Key('myPasswordField'), // Add this line
                             isPasswordVisible: isPasswordVisible,
                             onTap: () {

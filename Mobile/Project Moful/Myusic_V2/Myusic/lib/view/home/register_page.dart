@@ -68,7 +68,7 @@ class _RegisterPageState extends State<RegisterPage> {
                             inputType: TextInputType.phone,
                           ),
                           MyPasswordField(
-                            key: const Key('myPasswordField'), 
+                            key: const Key('myPasswordField'),
                             isPasswordVisible: passwordVisibility,
                             onTap: () {
                               setState(() {

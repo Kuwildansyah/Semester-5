@@ -16,8 +16,7 @@ Timer? debounce;
 void playerPlayProcessDebounce(List songsList, int index) {
   debounce?.cancel();
   debounce = Timer(const Duration(milliseconds: 600), () {
-      PlayerInvoke.init(songsList: songsList, index: index);
-
+    PlayerInvoke.init(songsList: songsList, index: index);
   });
 }
 
@@ -63,11 +62,9 @@ class PlayerInvoke {
     try {
       await pageManager.setShuffleMode(AudioServiceShuffleMode.none);
       await pageManager.adds(queue, index);
-      await pageManager.playAS();  
+      await pageManager.playAS();
     } catch (e) {
-
       print("error: $e");
-      
     }
   }
 }

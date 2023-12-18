@@ -7,7 +7,12 @@ class IconTextRow extends StatelessWidget {
   final String icon;
   final VoidCallback onTap;
 
-  const IconTextRow({super.key, required this.title, required this.icon, required this.onTap, });
+  const IconTextRow({
+    super.key,
+    required this.title,
+    required this.icon,
+    required this.onTap,
+  });
 
   @override
   Widget build(BuildContext context) {

@@ -8,13 +8,11 @@ class UserData {
   static const _keyUser = 'user';
 
   static User myUser = User(
-    image:
-        "https://static.animecorner.me/2023/08/1691486940-68688.jpg",
+    image: "https://static.animecorner.me/2023/08/1691486940-68688.jpg",
     name: 'lalalala',
     email: 'lala@gmail.com',
     phone: '(208) 206-5039',
-    aboutMeDescription:
-        'Dongo.',
+    aboutMeDescription: 'Dongo.',
   );
 
   static Future init() async =>

@@ -20,10 +20,9 @@ class WelcomePage extends StatelessWidget {
                   children: [
                     Center(
                       child: SizedBox(
-                        width: MediaQuery.of(context).size.width * 0.8, 
+                        width: MediaQuery.of(context).size.width * 0.8,
                         child: const Image(
-                          image:
-                              AssetImage('assets/img/radio.png'),
+                          image: AssetImage('assets/img/radio.png'),
                         ),
                       ),
                     ),

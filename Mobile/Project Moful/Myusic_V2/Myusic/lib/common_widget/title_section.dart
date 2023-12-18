@@ -9,14 +9,14 @@ class TitleSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-              child: Text(
-                title,
-                style: TextStyle(
-                    color: TColor.primaryText80,
-                    fontSize: 15,
-                    fontWeight: FontWeight.w600),
-              ),
-            );
+      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+      child: Text(
+        title,
+        style: TextStyle(
+            color: TColor.primaryText80,
+            fontSize: 15,
+            fontWeight: FontWeight.w600),
+      ),
+    );
   }
 }

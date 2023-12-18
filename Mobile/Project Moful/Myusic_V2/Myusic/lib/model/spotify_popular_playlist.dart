@@ -24,9 +24,11 @@ class PopularPlaylist {
 
   String toRawJson() => json.encode(toJson());
 
-  factory PopularPlaylist.fromJson(Map<String, dynamic> json) => PopularPlaylist(
+  factory PopularPlaylist.fromJson(Map<String, dynamic> json) =>
+      PopularPlaylist(
         href: json["href"],
-        items: List<PlaylistItem>.from(json["items"].map((x) => PlaylistItem.fromJson(x))),
+        items: List<PlaylistItem>.from(
+            json["items"].map((x) => PlaylistItem.fromJson(x))),
         limit: json["limit"],
         next: json["next"],
         offset: json["offset"],
@@ -78,7 +80,8 @@ class PlaylistItem {
     required this.uri,
   });
 
-  factory PlaylistItem.fromRawJson(String str) => PlaylistItem.fromJson(json.decode(str));
+  factory PlaylistItem.fromRawJson(String str) =>
+      PlaylistItem.fromJson(json.decode(str));
 
   String toRawJson() => json.encode(toJson());
 

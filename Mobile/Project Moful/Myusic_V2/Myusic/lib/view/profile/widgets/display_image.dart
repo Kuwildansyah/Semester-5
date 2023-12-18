@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 
-class DisplayImage extends StatelessWidget  {
+class DisplayImage extends StatelessWidget {
   final String imagePath;
   final VoidCallback onPressed;
 
@@ -64,6 +64,4 @@ class DisplayImage extends StatelessWidget  {
         color: Colors.white,
         child: child,
       ));
-      
-       
 }

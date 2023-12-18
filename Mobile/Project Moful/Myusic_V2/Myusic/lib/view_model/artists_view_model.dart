@@ -40,12 +40,11 @@ class ArtistsViewModel extends GetxController {
     }
   ].obs;
 
-
   final albumsArr = [
     {
-      "image":"assets/img/ar_d_1.png",
-      "name":"Fire Dragon",
-      "year":"2019",
+      "image": "assets/img/ar_d_1.png",
+      "name": "Fire Dragon",
+      "year": "2019",
     },
     {
       "image": "assets/img/ar_d_2.png",
@@ -53,9 +52,9 @@ class ArtistsViewModel extends GetxController {
       "year": "2018",
     },
     {
-      "image":"assets/img/ar_d_3.png",
-      "name":"Giving Heart",
-      "year":"2017",
+      "image": "assets/img/ar_d_3.png",
+      "name": "Giving Heart",
+      "year": "2017",
     },
     {
       "image": "assets/img/ar_d_4.png",
@@ -63,7 +62,6 @@ class ArtistsViewModel extends GetxController {
       "year": "2016",
     },
   ];
-
 
   final playedArr = [
     {"duration": "3:56", "name": "Billie Jean", "artists": "Michael Jackson"},
@@ -91,5 +89,4 @@ class ArtistsViewModel extends GetxController {
       "artists": "Michael Jackson"
     }
   ].obs;
- 
 }

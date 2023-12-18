@@ -23,9 +23,9 @@ class RecommendedCell extends StatelessWidget {
               fit: BoxFit.cover,
             ),
           ),
-
-          const SizedBox(height: 15,),
-
+          const SizedBox(
+            height: 15,
+          ),
           Text(
             mObj["name"],
             maxLines: 1,
@@ -34,7 +34,6 @@ class RecommendedCell extends StatelessWidget {
                 fontSize: 13,
                 fontWeight: FontWeight.w700),
           ),
-
           Text(
             mObj["artists"],
             maxLines: 1,

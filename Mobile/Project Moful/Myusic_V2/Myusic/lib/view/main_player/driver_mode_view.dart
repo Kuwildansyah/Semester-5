@@ -127,7 +127,6 @@ class _DriverModeViewState extends State<DriverModeView> {
                     "3:35",
                     style: TextStyle(color: TColor.primaryText60, fontSize: 12),
                   ),
-            
                   Text(
                     "4:26",
                     style: TextStyle(color: TColor.primaryText60, fontSize: 12),

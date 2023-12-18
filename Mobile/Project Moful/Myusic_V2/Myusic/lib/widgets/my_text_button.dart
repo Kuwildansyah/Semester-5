@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../constant.dart';
 
 class MyTextButton extends StatelessWidget {
-const MyTextButton({
+  const MyTextButton({
     super.key,
     required this.buttonName,
     required this.onTap,
@@ -13,7 +13,6 @@ const MyTextButton({
   final void Function()? onTap;
   final Color bgColor;
   final Color textColor;
-
 
   @override
   Widget build(BuildContext context) {

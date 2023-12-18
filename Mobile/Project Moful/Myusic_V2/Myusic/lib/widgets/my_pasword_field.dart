@@ -9,7 +9,7 @@ class MyPasswordField extends StatelessWidget {
   }) : super(key: key);
 
   final bool isPasswordVisible;
-  final Function ()? onTap;
+  final Function()? onTap;
 
   @override
   Widget build(BuildContext context) {

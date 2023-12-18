@@ -30,13 +30,11 @@ class PlaylistSongsCell extends StatelessWidget {
         ),
         Padding(
           padding: const EdgeInsets.all(15.0),
-
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Expanded(
                 child: Column(
-                    
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisSize: MainAxisSize.min,
                     children: [

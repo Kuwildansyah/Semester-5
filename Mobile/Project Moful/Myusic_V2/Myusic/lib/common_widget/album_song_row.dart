@@ -31,38 +31,32 @@ class AlbumSongRow extends StatelessWidget {
               ),
             ),
             Expanded(
-                child: Text(
+              child: Text(
                 sObj["name"],
                 maxLines: 1,
-                style: TextStyle(
-                    color: TColor.primaryText60,
-                    fontSize: 13),
+                style: TextStyle(color: TColor.primaryText60, fontSize: 13),
               ),
             ),
-
             Text(
               sObj["duration"],
               maxLines: 1,
-              style: TextStyle(
-                  color: TColor.primaryText28,
-                  fontSize: 10),
+              style: TextStyle(color: TColor.primaryText28, fontSize: 10),
             ),
-
             Container(
               width: 80,
               alignment: Alignment.centerRight,
-              child: isPlay ? Image.asset(
-                "assets/img/play_eq.png",
-                width: 60,
-                height: 25,
-              ) : Image.asset(
+              child: isPlay
+                  ? Image.asset(
+                      "assets/img/play_eq.png",
+                      width: 60,
+                      height: 25,
+                    )
+                  : Image.asset(
                       "assets/img/more.png",
                       width: 25,
                       height: 25,
                     ),
             )
-            
-            
           ],
         ),
         Divider(

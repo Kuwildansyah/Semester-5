@@ -24,7 +24,8 @@ class EditPhoneFormPageState extends State<EditPhoneFormPage> {
   }
 
   void updateUserValue(String phone) {
-    String formattedPhoneNumber = "(${phone.substring(0, 3)}) ${phone.substring(3, 6)}-${phone.substring(6, phone.length)}";
+    String formattedPhoneNumber =
+        "(${phone.substring(0, 3)}) ${phone.substring(3, 6)}-${phone.substring(6, phone.length)}";
     user.phone = formattedPhoneNumber;
   }
 

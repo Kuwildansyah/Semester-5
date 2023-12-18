@@ -7,7 +7,11 @@ class PlayerBottomButton extends StatelessWidget {
   final String icon;
   final VoidCallback onPressed;
 
-  const PlayerBottomButton({super.key, required this.title, required this.icon, required this.onPressed});
+  const PlayerBottomButton(
+      {super.key,
+      required this.title,
+      required this.icon,
+      required this.onPressed});
 
   @override
   Widget build(BuildContext context) {

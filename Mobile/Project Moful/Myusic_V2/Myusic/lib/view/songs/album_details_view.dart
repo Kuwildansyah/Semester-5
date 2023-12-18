@@ -16,7 +16,6 @@ class AlbumDetailsView extends StatefulWidget {
 }
 
 class _AlbumDetailsViewState extends State<AlbumDetailsView> {
-
   final albumVM = Get.put(AlbumViewModel());
 
   @override
@@ -167,11 +166,9 @@ class _AlbumDetailsViewState extends State<AlbumDetailsView> {
                                       height: 12,
                                       fit: BoxFit.contain,
                                     ),
-
                                     const SizedBox(
                                       width: 8,
                                     ),
-
                                     Text(
                                       "Play",
                                       style: TextStyle(
@@ -184,7 +181,6 @@ class _AlbumDetailsViewState extends State<AlbumDetailsView> {
                                 ),
                               ),
                             ),
-
                             InkWell(
                               borderRadius: BorderRadius.circular(17.5),
                               onTap: () {},
@@ -192,7 +188,8 @@ class _AlbumDetailsViewState extends State<AlbumDetailsView> {
                                 width: 70,
                                 height: 25,
                                 decoration: BoxDecoration(
-                                  border: Border.all(color: TColor.primaryText, width: 1),
+                                  border: Border.all(
+                                      color: TColor.primaryText, width: 1),
                                   borderRadius: BorderRadius.circular(17.5),
                                 ),
                                 alignment: Alignment.center,
@@ -220,7 +217,6 @@ class _AlbumDetailsViewState extends State<AlbumDetailsView> {
                                 ),
                               ),
                             ),
-
                             InkWell(
                               borderRadius: BorderRadius.circular(17.5),
                               onTap: () {},
@@ -264,24 +260,21 @@ class _AlbumDetailsViewState extends State<AlbumDetailsView> {
                     ),
                   )
                 ],
-              )
-,
-               ListView.builder(
-                physics: const NeverScrollableScrollPhysics(),
-                shrinkWrap: true,
-                padding: const EdgeInsets.symmetric(vertical: 10),
-                itemCount: albumVM.playedArr.length,
-                itemBuilder: (context, index) {
-                  var sObj = albumVM.playedArr[index];
-                  return AlbumSongRow(
-                    sObj: sObj,
-                    
-                    onPressed: () {},
-                    onPressedPlay: () {},
-                    isPlay: index == 0,
-                  );
-                })              
-            
+              ),
+              ListView.builder(
+                  physics: const NeverScrollableScrollPhysics(),
+                  shrinkWrap: true,
+                  padding: const EdgeInsets.symmetric(vertical: 10),
+                  itemCount: albumVM.playedArr.length,
+                  itemBuilder: (context, index) {
+                    var sObj = albumVM.playedArr[index];
+                    return AlbumSongRow(
+                      sObj: sObj,
+                      onPressed: () {},
+                      onPressedPlay: () {},
+                      isPlay: index == 0,
+                    );
+                  })
             ],
           ),
         ),

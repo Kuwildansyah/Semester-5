@@ -38,8 +38,9 @@ class ArtistAlbumCell extends StatelessWidget {
             aObj["year"],
             maxLines: 1,
             style: TextStyle(
-                color: TColor.primaryText35,
-                fontSize: 10,),
+              color: TColor.primaryText35,
+              fontSize: 10,
+            ),
           )
         ],
       ),

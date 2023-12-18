@@ -85,7 +85,7 @@ class _SongsViewState extends State<SongsView>
                   color: TColor.focus,
                   fontSize: 15,
                   fontWeight: FontWeight.w600),
-                  unselectedLabelColor: TColor.primaryText80,
+              unselectedLabelColor: TColor.primaryText80,
               unselectedLabelStyle: TextStyle(
                   color: TColor.primaryText80,
                   fontSize: 15,

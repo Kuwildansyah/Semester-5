@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:music_player/home/view/signin_page.dart';
+import 'package:music_player/view/home/signin_page.dart';
 
 void main() {
   testWidgets('SignInPage UI Test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
     await tester.pumpWidget(
-      MaterialApp(
+      const MaterialApp(
         home: SignInPage(),
       ),
     );
@@ -20,7 +20,8 @@ void main() {
     expect(find.text("You've been missed!"), findsOneWidget);
 
     // Verify the existence of the text field with the hint text.
-    expect(find.widgetWithText(TextField, 'Phone, email or username'), findsOneWidget);
+    expect(find.widgetWithText(TextField, 'Phone, email or username'),
+        findsOneWidget);
 
     // Verify the existence of the "Don't have an account?" text.
     expect(find.text("Don't have an account? "), findsOneWidget);

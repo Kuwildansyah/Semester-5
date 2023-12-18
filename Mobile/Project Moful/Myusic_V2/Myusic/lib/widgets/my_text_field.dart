@@ -11,7 +11,6 @@ class MyTextField extends StatelessWidget {
   final String hintText;
   final TextInputType inputType;
 
-
   @override
   Widget build(BuildContext context) {
     return Padding(
