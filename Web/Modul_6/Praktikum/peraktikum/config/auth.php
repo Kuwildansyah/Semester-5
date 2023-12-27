@@ -40,6 +40,16 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+        'api' => [
+            'driver' => 'token',
+            'provider' => 'users',
+            'hash' => false,
+        ],
+    ],
+    'sanctum' => [
+        'stateful' => explode(',', env('SANCTUM_STATEFUL_DOMAINS', 'localhost,127.0.0.1')),
+        'expiration' => null,
+        'middleware' => ['web', 'auth', 'verified'],
     ],
 
     /*
@@ -109,6 +119,7 @@ return [
     | confirmation screen. By default, the timeout lasts for three hours.
     |
     */
+   
 
     'password_timeout' => 10800,
 
