@@ -1,6 +1,4 @@
 import math
-
-# This is a decorator that prints a message before and after calling the function
 def print_message(func):
     def wrapper(*args, **kwargs):
         print("Calling function...")
